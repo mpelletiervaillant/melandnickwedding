@@ -52,6 +52,10 @@ h3, h4,p, a {
   font-weight: 600;
 }
 
+.italic {
+  font-tyle: italic;
+}
+
 .black {
   color: var(--color-black)
 }
@@ -246,6 +250,17 @@ h3, h4,p, a {
 .photographer a:hover {
   color: #3C5951;
   border-bottom: 1px solid #3C5951;
+}
+
+/*-----------------PROPOSAL-----------------*/
+.proposal-banner {
+  background-image: url('../images/proposal-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: local;
+  height: 85vh;
+  position: relative;
 }
 
 @media only screen and (min-width: 400px) {
