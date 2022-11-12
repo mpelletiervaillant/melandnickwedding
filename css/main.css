@@ -11,3 +11,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.main-banner {
+  background-image: url('../images/header-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
