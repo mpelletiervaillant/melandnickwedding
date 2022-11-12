@@ -3,7 +3,7 @@
   --font-secondary: soleil, sans-serif;
   --font-third: 'Termina', sans-serif;
   --color-pink: #ECC2AD;
-  --color-beige: ##F2F0ED;
+  --color-beige: #F2F0ED;
   --color-green: #3C5951;
   --color-black: #414141;
 }
@@ -19,8 +19,16 @@ html {
   padding-bottom: 5em;
 }
 
+.my-padding-top {
+  padding-top: 5em;
+}
+
 .black {
   color: var(--color-black)
+}
+
+.beige {
+  background-color: var(--color-beige);
 }
 
 /*Main Banner*/
@@ -31,7 +39,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
 
 .main-content {
@@ -40,6 +48,10 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+ 
+.main-nav ul {
+  text-align: center;
 }
 
 .main-nav ul li a{
@@ -76,12 +88,12 @@ html {
   text-decoration: none;
 }
 
-nav {
-  position: fixed;
-  right: 0;
-}
-
 /*Introduction*/
+
+.leading-text {
+  color: var(--color-green);
+  text-transform: uppercase;
+}
 
 .rsvp-inline-link {
   border-bottom: 3px solid #ECC2AD;
@@ -92,4 +104,21 @@ nav {
 
 .rsvp-inline-link:hover {
   border-bottom: 3px solid #3C5951;
+}
+
+/*Venue*/
+
+.venue-section {
+  border-bottom: 5px solid #414141;
+}
+
+@media only screen and (min-width: 608px) {
+
+  .main-nav {
+    right: 6em;
+  }
+
+  .main-nav ul {
+    text-align: right;
+  }
 }
