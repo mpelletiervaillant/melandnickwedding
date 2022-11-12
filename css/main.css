@@ -2,14 +2,28 @@
   --font-primary: p22-mackinac-pro, serif;
   --font-secondary: soleil, sans-serif;
   --font-third: 'Termina', sans-serif;
-  --color-black: #1C1C1C;
-  --color-beige: #f8f7f5;
-  --color-hds: #583017;
+  --color-pink: #ECC2AD;
+  --color-beige: ##F2F0ED;
+  --color-green: #3C5951;
+  --color-black: #414141;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+/*General Styling*/
+
+.my-padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.black {
+  color: var(--color-black)
+}
+
+/*Main Banner*/
 
 .main-banner {
   background-image: url('../images/header-banner.jpg');
@@ -26,4 +40,56 @@ html {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+.main-nav ul li a{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.rsvp-nav-btn {
+  background-color: var(--color-pink);
+  padding: .5em 2em;
+  transition: all .3s ease-in-out;
+}
+
+.rsvp-nav-btn:hover {
+  background-color: white;
+  padding: .5em 2em;
+  color: var(--color-green);
+}
+
+.rsvp-main-btn {
+  border: 1px solid white;
+  padding: .5em 3em;
+  color: white;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.rsvp-main-btn:hover {
+  border: 1px solid white;
+  padding: .5em 3em;
+  color: var(--color-green);
+  background-color: white;
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+}
+
+/*Introduction*/
+
+.rsvp-inline-link {
+  border-bottom: 3px solid #ECC2AD;
+  color: var(--color-black);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.rsvp-inline-link:hover {
+  border-bottom: 3px solid #3C5951;
 }
