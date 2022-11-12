@@ -1,0 +1,518 @@
+:root {
+  --font-primary: p22-mackinac-pro, serif;
+  --font-secondary: soleil, sans-serif;
+  --font-third: 'Termina', sans-serif;
+  --color-black: #1C1C1C;
+  --color-beige: #f8f7f5;
+  --color-hds: #583017;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+
+h1, h2, h4 {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-weight: 300;
+  color: #383838;
+}
+
+.my-max-length {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48em;
+  width: 100%;
+}
+
+.small-max-length {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28em;
+  width: 100%;
+}
+
+.sans {
+  font-family: var(--font-secondary);
+}
+
+.serif {
+  font-family: var(--font-primary);
+}
+
+/* Colours & Links & Extras */
+
+a {
+  text-decoration: none;
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.white {
+  color: #ffffff;
+}
+
+.light-border {
+  border: 1px solid lightgrey;
+}
+
+.w-33 {
+  width: 32%;
+}
+
+.w-49 {
+  width: 49%;
+}
+
+/* Backgrounds */
+
+.light-background {
+  background-color: var(--color-beige);
+}
+
+.dark-background {
+  background-color: #333132;
+}
+
+/* Spacing */
+
+.my-padding {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+.my-padding-btm {
+  padding-bottom: 6.5rem;
+}
+
+.my-padding-top {
+  padding-top: 6.5rem;
+}
+
+/* Buttons */
+
+.enter-here-btn {
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  text-decoration: none;
+  font-family: var(--font-third);
+  font-weight: 600;
+  padding: 1.5em 2.5em 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(to right, #fff 50%, var(--color-black) 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .3s ease-in-out;
+}
+
+.enter-here-btn:hover {
+  background-position: right bottom;
+  color: #fff;
+}
+
+/* Navigation */
+
+.mel-logo {
+  width: 72px;
+  transition: all .2s ease-in-out;
+}
+
+.mel-logo:hover {
+  transform: scale(1.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-navy);
+  transition: color .2s ease;
+  letter-spacing: 1px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: .3em;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav a:hover {
+  color: black;
+}
+
+.main-navigation ul li a {
+  font-family: var(--font-third);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.exclamation {
+  color: #76953D;
+}
+
+.period {
+  color: #F4B8CB;
+}
+
+.love-text {
+  color: #F26D48;
+}
+
+/* Visit Shop */
+
+.visit-shop-btn {
+  color: var(--color-black);
+  font-family: var(--font-third);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+.visit-shop-btn:hover img {
+  transform: translateX(10%);
+}
+
+.shop-arrow-icon img {
+  width: 48px;
+  transition: all .2s ease-in-out;
+}
+
+.shop-text {
+  padding: 3em 0;
+}
+
+/* Footer */
+
+.social-media-links {
+  background-color: var(--color-beige);
+}
+
+.social-media-links ul li a {
+  font-family: var(--font-third);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--color-black);
+}
+
+.social-media-link {
+  transition: all .2s ease-in-out;
+}
+
+.social-media-link:hover {
+  color: #26928F;
+}
+
+.footer-copyright {
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  opacity: 50%;
+}
+
+/* Case Studies */
+
+.arrow-icon {
+  width: 96px;
+  transition: all .2s ease-in-out;
+}
+
+.banner-img {
+  transition: all .2s ease-in-out;
+}
+
+.hover-card:hover {
+  cursor: pointer;
+}
+
+.hover-card:hover .arrow-icon {
+  transform: translateX(10%);
+}
+
+.hover-card:hover .banner-img {
+  transform: scale(1.015);
+}
+.project-description {
+  width: 70%;
+  line-height: 2.15;
+}
+
+.case-study-banner {
+  height: 500px; /* You must set a specified height */
+  background-position: top; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.tag {
+  font-family: var(--font-third);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Gee-Gees */
+
+.gee-gees-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/gee-gees/gee-gees-banner.jpg"); /* The image used */
+}
+
+.next-project-gee-gees {
+  background: linear-gradient(to right, #5d0024 50%, #91AF51 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-gee-gees:hover {
+  background-position: right bottom;
+}
+
+/* Wellness  */
+
+.wellness-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/wellness/wellness-guidelines.jpg"); /* The image used */
+}
+
+.wellness-background-light {
+  background-color: #F6F5F1;
+}
+
+.wellness-background-dark {
+  background-color: #232942;
+}
+
+.next-project-wellness:hover {
+  background-position: right bottom;
+}
+
+.next-project-wellness {
+  background: linear-gradient(to right, #91AF51 50%, #F5E6C9 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+/* The High Desert Sonnets  */
+
+.hds-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/hds/hds-case-study-banner.jpg"); /* The image used */
+}
+
+.hds-link {
+  background:
+    linear-gradient(
+      to bottom, #583017 0%, #583017 100%
+    );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: var(--color-hds);
+  transition: all .3s ease;
+}
+
+.hds-link:hover {
+  color: #fff;
+  background-size: 4px 50px;
+}
+
+.hds-logo {
+  background-color: var(--color-beige);
+}
+
+.hds-light-color {
+  color: #F5E6C9;
+}
+
+.hds-light-background {
+  background-color: #F5E6C9;
+}
+
+.hds-dark-background {
+  background-color: var(--color-hds);
+}
+
+.next-project-hds {
+  background: linear-gradient(to right, #F5E6C9 50%, #52D0B6 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-hds:hover {
+  background-position: right bottom;
+}
+
+/* Youthfully */
+
+.youthfully-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/youthfully/branding-guidelines.jpg"); /* The image used */
+}
+
+.next-project-youthfully {
+  background: linear-gradient(to right, #52D0B6 50%, #016eb1 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-youthfully:hover {
+  background-position: right bottom;
+}
+
+/* CANImmunize */
+
+.canimmunize-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/canimmunize/canimmunize-header.jpg"); /* The image used */
+}
+
+.next-project-canimmunize {
+  background: linear-gradient(to right, #016eb1 50%, #092039 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-canimmunize:hover {
+  background-position: right bottom;
+}
+
+/* WattIQ */
+
+.wattiq-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/wattiq/video-3.jpg"); /* The image used */
+}
+
+.next-project-wattiq {
+  background: linear-gradient(to right, #092039 50%, #d63532 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-wattiq:hover {
+  background-position: right bottom;
+}
+
+/* QUILT */
+
+.quilt-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/quilt/quilt-banner.jpg"); /* The image used */
+}
+
+.next-project-quilt {
+  background: linear-gradient(to right, #d63532 50%, #42b3c3 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-quilt:hover {
+  background-position: right bottom;
+}
+
+/* Canadian Geographic */
+
+.cangeo-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/can-geo/cangeo-header.jpg"); /* The image used */
+}
+
+.next-project-cangeo {
+  background: linear-gradient(to right, #42b3c3 50%, #7F62AD 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-cangeo:hover {
+  background-position: right bottom;
+}
+
+/* Creative Mornings */
+
+.cm-case-study-banner {
+  background-image: url("{{site.baseurl}}/images/cm/cm-banner.jpg"); /* The image used */
+}
+
+.next-project-cm {
+  background: linear-gradient(to right, #7F62AD 50%, #5d0024 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all .6s ease-in-out;
+}
+
+.next-project-cm:hover {
+  background-position: right bottom;
+}
+
+.cm-link {
+  background:
+    linear-gradient(
+      to bottom, #7F62AD 0%, #7F62AD 100%
+    );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: var(--color-hds);
+  transition: all .3s ease;
+}
+
+.cm-link:hover {
+  color: #fff;
+  background-size: 4px 50px;
+}
+
+/* Next Pooject Button */
+
+.next-project-section {
+  width: 100%;
+}
+
+.next-project-text {
+  transition: all .6s ease-in-out;
+}
+
+.view-next {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.next-project-section:hover .next-project-text {
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: 700px) {
+
+  .logo {
+    text-align: left;
+  }
+
+  .navigation-links {
+    text-align: right;
+  }
+}
