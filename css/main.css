@@ -39,7 +39,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
-  /* position: relative; */
+  position: relative;
 }
 
 .main-content {
@@ -111,6 +111,22 @@ html {
 .venue-section {
   border-bottom: 5px solid #414141;
 }
+
+/*Wedding Schedule*/
+
+.wedding-schedule-background {
+  background-image: url('../images/wedding-day-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 1500px;
+}
+
+.info-icon {
+  padding-right: 1em;
+}
+
+
 
 @media only screen and (min-width: 608px) {
 
