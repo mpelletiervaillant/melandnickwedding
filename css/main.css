@@ -1,7 +1,6 @@
 :root {
-  --font-primary: p22-mackinac-pro, serif;
-  --font-secondary: soleil, sans-serif;
-  --font-third: 'Termina', sans-serif;
+  --font-primary: "swear-display", serif;
+  --font-secondary: "gill-sans-nova", sans-serif;
   --color-pink: #ECC2AD;
   --color-beige: #F2F0ED;
   --color-green: #3C5951;
@@ -10,6 +9,11 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--color-pink);
+}
+
+body {
+  background-color: white;
 }
 
 /*General Styling*/
@@ -25,6 +29,19 @@ html {
 
 .my-padding-bottom {
   padding-bottom: 5em;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  line-height: 4.5rem;
+}
+
+h3, h4,p, a {
+  font-family: var(--font-secondary);
+}
+
+.semibold {
+  font-weight: 600;
 }
 
 .black {
@@ -70,21 +87,34 @@ html {
   text-align: center;
 }
 
-.main-nav ul li a{
+.nav-link{
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 3px;
+  padding-bottom: .2em;
+  transition: all .3s ease-in-out;
+}
+
+.nav-link:hover{
+  border-bottom: 3px solid #ECC2AD;
+}
+
+.active {
+  border-bottom: 3px solid #ECC2AD;
 }
 
 .rsvp-nav-btn {
   background-color: var(--color-pink);
-  padding: .5em 2em;
+  padding: .5em 3em;
   transition: all .3s ease-in-out;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
 }
 
 .rsvp-nav-btn:hover {
   background-color: white;
-  padding: .5em 2em;
   color: var(--color-green);
 }
 
@@ -93,6 +123,7 @@ html {
   padding: .5em 3em;
   color: white;
   text-decoration: none;
+  letter-spacing: 3px;
   transition: all .3s ease-in-out;
 }
 
@@ -109,6 +140,11 @@ html {
 .leading-text {
   color: var(--color-green);
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.intro-paragraph {
+  line-height: 1.8rem;
 }
 
 .rsvp-inline-link {
