@@ -99,16 +99,17 @@ h3, h4,p, a {
   text-align: center;
 }
 
-.nav-link{
+.nav-link {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 3px;
   padding-bottom: .2em;
   transition: all .3s ease-in-out;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
-.nav-link:hover{
+.nav-link:hover {
   border-bottom: 3px solid #ECC2AD;
 }
 
