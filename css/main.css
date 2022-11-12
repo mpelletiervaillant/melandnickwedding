@@ -27,6 +27,14 @@ html {
   color: var(--color-black)
 }
 
+.green {
+  color: var(--color-green);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
 .beige {
   background-color: var(--color-beige);
 }
@@ -122,10 +130,18 @@ html {
   height: 1500px;
 }
 
-.info-icon {
-  padding-right: 1em;
+/*Additional Information*/
+
+.info-sections {
+  border-bottom: 1px solid #414141;
+  margin: 1em;
+  text-transform: uppercase;
+  padding-bottom: .5em;
 }
 
+h4 {
+  text-transform: uppercase;
+}
 
 
 @media only screen and (min-width: 608px) {
