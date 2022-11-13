@@ -272,6 +272,24 @@ h3, h4,p, a {
   margin: 0 auto;
 }
 
+.proposal-story-banner {
+  background-image: url('../images/proposal-story-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: local;
+  height: 600px;
+  position: relative;
+}
+
+.proposal-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
 @media only screen and (min-width: 400px) {
 
   .info-block {
