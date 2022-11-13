@@ -64,6 +64,10 @@ h3, h4,p, a {
   font-family: var(--font-primary);
 }
 
+.sans-serif {
+  font-family: var(--font-secondary);
+}
+
 .green {
   color: var(--color-green);
 }
@@ -276,7 +280,7 @@ h3, h4,p, a {
   background-image: url('../images/proposal-story-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: right;
   background-attachment: local;
   height: 600px;
   position: relative;
@@ -288,6 +292,11 @@ h3, h4,p, a {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+}
+
+.story-column {
+  width: 75%;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 400px) {
