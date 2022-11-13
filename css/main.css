@@ -60,6 +60,10 @@ h3, h4,p, a {
   color: var(--color-black)
 }
 
+.serif {
+  font-family: var(--font-primary);
+}
+
 .green {
   color: var(--color-green);
 }
@@ -257,10 +261,15 @@ h3, h4,p, a {
   background-image: url('../images/proposal-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: left;
   background-attachment: local;
   height: 85vh;
   position: relative;
+}
+
+.portrait {
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 400px) {
