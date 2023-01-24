@@ -1,0 +1,393 @@
+:root {
+  --font-primary: "swear-display", serif;
+  --font-secondary: "gill-sans-nova", sans-serif;
+  --color-pink: #ECC2AD;
+  --color-beige: #F2F0ED;
+  --color-green: #3C5951;
+  --color-black: #414141;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-pink);
+}
+
+body {
+  background-color: white;
+}
+
+/*General Styling*/
+
+.my-padding {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.my-padding-top {
+  padding-top: 5em;
+}
+
+.my-padding-bottom {
+  padding-bottom: 5em;
+}
+
+h2 {
+  font-family: var(--font-primary);
+  line-height: 4.5rem;
+}
+
+h3 {
+  letter-spacing: 3px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+h3, h4,p, a {
+  font-family: var(--font-secondary);
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.black {
+  color: var(--color-black)
+}
+
+.serif {
+  font-family: var(--font-primary);
+}
+
+.sans-serif {
+  font-family: var(--font-secondary);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.pink {
+  color: var(--color-pink);
+}
+
+.beige {
+  background-color: var(--color-beige);
+}
+
+.light-grey {
+ color: #A1A1A1;
+}
+
+.white {
+  color: white;
+}
+
+/*Main Banner*/
+
+.main-banner {
+  background-image: url('../images/header-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+ 
+.main-nav ul {
+  text-align: center;
+}
+
+.nav-link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding-bottom: .2em;
+  transition: all .3s ease-in-out;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #ECC2AD;
+}
+
+.active {
+  border-bottom: 3px solid #ECC2AD;
+}
+
+.rsvp-nav-btn {
+  background-color: var(--color-pink);
+  padding: .5em 3em;
+  transition: all .3s ease-in-out;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.rsvp-nav-btn:hover {
+  background-color: white;
+  color: var(--color-green);
+}
+
+.rsvp-main-btn {
+  border: 1px solid white;
+  padding: .5em 3em;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  transition: all .3s ease-in-out;
+}
+
+.rsvp-main-btn:hover {
+  border: 1px solid white;
+  padding: .5em 3em;
+  color: var(--color-green);
+  background-color: white;
+  text-decoration: none;
+}
+
+/*Introduction*/
+
+.leading-text {
+  color: var(--color-green);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.intro-paragraph {
+  line-height: 1.8rem;
+}
+
+.rsvp-inline-link {
+  border-bottom: 3px solid #ECC2AD;
+  color: var(--color-black);
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.rsvp-inline-link:hover {
+  border-bottom: 3px solid #3C5951;
+}
+
+/*Venue*/
+
+.venue-section {
+  border-bottom: 5px solid #414141;
+}
+
+/*Wedding Schedule*/
+
+.wedding-schedule-background {
+  background-image: url('../images/wedding-day-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+}
+
+/*Additional Information*/
+
+.additional-info-section {
+  width: 80%;
+}
+
+.info-block {
+  text-align: center;
+}
+
+.info-sections {
+  border-bottom: 1px solid #414141;
+  margin: 1em;
+  text-transform: uppercase;
+  padding-bottom: .5em;
+}
+
+/*Celebrate banner*/
+
+.celebrate-banner {
+  background-image: url('../images/celebrate-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: local;
+  height: 600px;
+  position: relative;
+}
+
+.celebrate-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/*Footer*/
+
+.footer {
+  border-top: 1px solid #A1A1A1;
+  text-align: center;
+}
+
+.footer-monogram {
+  width: 35%;
+  margin: 0 auto;
+}
+
+.photographer a {
+  text-decoration: none;
+  color: #a1a1a1;
+  border-bottom: 1px solid #A1A1A1;
+  transition: all .3s ease-in-out;
+}
+
+.photographer a:hover {
+  color: #3C5951;
+  border-bottom: 1px solid #3C5951;
+}
+
+/*-----------------PROPOSAL-----------------*/
+.proposal-banner {
+  background-image: url('../images/proposal-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  background-attachment: local;
+  height: 85vh;
+  position: relative;
+}
+
+.portrait {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.proposal-story-banner {
+  background-image: url('../images/proposal-story-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: local;
+  height: 600px;
+  position: relative;
+}
+
+.proposal-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.story-column {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/*Comics*/
+
+.comics-link {
+  text-decoration: none;
+  padding-bottom: .2em;
+  border-bottom: 3px solid #ECC2AD;
+  transition: all .3s ease-in-out;
+}
+
+.comics-link:hover {
+  color: var(--color-green);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 400px) {
+
+  .info-block {
+    text-align: left;
+  }
+
+  .info-icon {
+    padding-right: .8em;
+  }
+}
+
+@media only screen and (min-width: 608px) {
+
+  .main-nav {
+    right: 6em;
+  }
+
+  .main-nav ul {
+    text-align: right;
+  }
+
+  .wedding-schedule-background {
+    height: 1000px;
+  }
+
+  .info-block {
+    text-align: center;
+  }
+
+  .footer-monogram {
+    width: 15%;
+    margin: 0 auto;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
+  .photographer {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  .wedding-schedule-background {
+    height: 1200px;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+  
+  .wedding-schedule-background {
+    height: 1400px;
+  }
+
+  .info-block {
+    text-align: left;
+  }
+
+}
+
+@media only screen and (min-width: 1290px) {
+  
+  .wedding-schedule-background {
+    height: 1800px;
+  }
+}
+
+
+@media only screen and (min-width: 2200px) {
+  
+  .wedding-schedule-background {
+    height: 2000px;
+  }
+}
