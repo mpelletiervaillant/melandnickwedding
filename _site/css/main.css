@@ -88,6 +88,10 @@ h3, h4,p, a {
   color: white;
 }
 
+.final-comic {
+  margin: 0 auto;
+}
+
 /*Main Banner*/
 
 .main-banner {
@@ -294,9 +298,20 @@ h3, h4,p, a {
   width: 100%;
 }
 
-.story-column {
-  width: 75%;
-  margin: 0 auto;
+.small-comic-border {
+  border: 2px solid #282d53;
+}
+
+.large-comic-border {
+  border: 4px solid #282d53;
+}
+
+.comic-border {
+  border: 2px solid #282d53;
+}
+
+.final-comic {
+  width: 100%
 }
 
 /*Comics*/
@@ -361,6 +376,10 @@ h3, h4,p, a {
 
   .wedding-schedule-background {
     height: 1200px;
+  }
+
+  .final-comic {
+    width: 50%
   }
 
 }
